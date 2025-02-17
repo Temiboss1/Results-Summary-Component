@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500..800;1,500..800&display=swap');
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body {
+     background-color: hsl(221, 100%, 96%);
+}
+.main {
+    display: flex;
+    font-family:'Hanken Grotesk';
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+.wrapper {
+    background-color: hsl(0, 0%, 100%);
+    width: 650px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.107);
+}
+
+ .result-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 40px;
+    border-radius: 20px;
+   align-items: center;
+}
+
+h1 {
+font-size: 20px;
+padding-bottom: 20px;
+}
+
+.result-circle {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    background:linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.result-number {
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+h2 {
+color: hsl(0, 0%, 100%);
+padding-bottom: 20px;
+}
+.score-note, .percentage, .result-heading {
+    color: hsla(221, 100%, 96%, 0.70);
+}
+
+.summary-container {
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px 30px 30px 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.summary-heading {
+    text-align: left;
+    color: hsl(224, 30%, 27%);
+    padding-top: 10px;
+}
+
+table {
+    margin: auto;
+    border-spacing: 12px;
+    font-size: 15px;
+}
+
+td {
+    border: 1px solid #514d4c2a;
+    width: 240px;
+    padding: 14px;
+    border-radius: 10px;
+  display: flex;
+}
+.reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.05);
+  border: none;
+}
+
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.05);
+    border: none;
+}
+
+.verbal {
+color: hsl(166, 100%, 37%);
+background-color: hsla(166, 100%, 37%, 0.05);
+border: none;
+}
+
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.05);
+    border: none;
+}
+
+.icon {
+  width: 25px;
+  padding-right: 10px;
+}
+.number {
+ color: hsla(224, 30%, 27%, 0.50);
+}
+.number {
+  flex-grow: 1;
+  margin: 0;
+  text-align: end;
+
+}
+span {
+    color: hsl(224, 30%, 27%);
+    font-weight: bolder;
+}
+
+button {
+    color: hsl(0, 0%, 100%);
+    background-color:hsl(224, 30%, 27%);
+    width: 240px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution { 
+    font-size: 15px;
+     text-align: center;
+     position: relative;
+     bottom: 70px;
+    }
+    .attribution a {
+         color: hsl(228, 45%, 44%);
+         }
+
+         @media screen and (max-width: 650px) {
+  
+            .wrapper {
+              flex-direction: column;
+                width: 300px;
+            }
+              .result-container {
+                width: 100%;
+            }
+              .summary-container {
+                width: 100%;
+                background-color: hsl(0, 0%, 100%);
+                padding: 30px 30px 30px 20px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            .attribution { 
+                margin-top: 20px;
+                }
+            }
+            
+            @media screen and (max-width: 370px) {
+              
+            .wrapper {
+              flex-direction: column;
+                width: 250px;
+            }
+              table {
+                border-spacing: 10px;
+                font-size: 15px;
+            }
+             td {
+                width: 190px;
+                padding: 13px;
+            }
+              
+              .result-circle {
+                width: 120px;
+                height: 120px;
+            }
+             button {
+                width: 200px;
+               height:45px
+            }
+            .result-number {
+                font-size: 50px;
+            }
+              .summary-heading {
+                padding-top:0;
+            }
+              .score-note {
+                font-size: 17px
+              }
+            }
